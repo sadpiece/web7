@@ -35,12 +35,13 @@
 
     const input = prompt("Введіть число:");
 
-    if (input !== null && userInput.trim() !== "") {
+    if (input !== null && input.trim() !== "") {
       const num = Number(input);
 
       if (isNaN(num) || num < 0) {
         document.write("<h2>Помилка. Введіть додатне число.</h2>");
-      } else {
+      } 
+      else {
         document.write("<h2>Обчислення Фібоначчі для числа " + num + "</h2>");
 
         const memoResult = fibonachiMemo(num);
@@ -62,7 +63,7 @@
               <p><b>Кількість викликів функції:</b> ${numberOfRecusrionCalls}</p>
             </div>
           `);
-        }
+        
       }
     } 
     else {

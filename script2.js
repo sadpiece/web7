@@ -18,8 +18,8 @@ if (input !== null && input.trim() !== "") {
           const result = factorial(numb);
 
           document.write("<h2>Обчислення факторіала</h2>");
-          document.write("<p>Ви ввели число: " + numberToCalculate + "</p>");
-          document.write("<p>Результат (" + numberToCalculate + "!): " + finalResult + "</p>");
+          document.write("<p>Ви ввели число: " + numb + "</p>");
+          document.write("<p>Результат: " + numb + "! = " + result + "</p>");
         }
 } 
 else {

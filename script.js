@@ -30,8 +30,8 @@ if (input !== null && input.trim() !== "") {
   const array = input.split(',').map(item => Number(item.trim()));
   const error = array.some(item => isNaN(item));
 
-  if (hasInvalidInput) {
-    document.write("<h2>Помилка: Ви ввели літери або недопустимі символи. Вводьте лише числа.</h2>");
+  if (error) {
+    document.write("<h2>Помилка: некорректний ввід.</h2>");
   } 
 
   else {
@@ -40,7 +40,7 @@ if (input !== null && input.trim() !== "") {
 
     document.write("<h2>Обчислення масиву чисел</h2>");
     document.write("<p>Ви ввели: " + array.join(", ") + "</p>");
-    document.write("<p>Кількість параметрів: " + array.length + "</p>");
+    document.write("<p>Кількість чисел: " + array.length + "</p>");
     document.write("<p>Результат: " + result + "</p>");
   }
   
