@@ -47,22 +47,15 @@
         const memoResult = fibonachiMemo(num);
         
 
-        document.write(`
-          <div class="result-box memo">
-            <h3>З мемоїзацією (Швидко)</h3>
-            <p><b>Результат:</b> ${memoResult}</p>
-            <p><b>Кількість викликів функції:</b> ${numberOfMemoCalls}</p>
-          </div>
-        `);
-            
- 	const recursionResult = fibonachiRecursion(num);
-        document.write(`
-            <div class="result-box recursion">
-              <h3>Звичайна рекурсія (Без кешу)</h3>
-              <p><b>Результат:</b> ${recursionResult}</p>
-              <p><b>Кількість викликів функції:</b> ${numberOfRecusrionCalls}</p>
-            </div>
-          `);
+        document.write("<h3>З мемоїзацією</h3>");
+	document.write("<p><b>Результат:</b> " + memoResult + "</p>");
+	document.write("<p><b>Кількість викликів функції:</b> " + numberOfMemoCalls + "</p>");
+
+	const recursionResult = fibonachiRecursion(num);
+
+	document.write("<h3>Звичайна рекурсія</h3>");
+	document.write("<p><b>Результат:</b> " + recursionResult + "</p>");
+	document.write("<p><b>Кількість викликів функції:</b> " + numberOfRecusrionCalls + "</p>");
         
       }
     } 
